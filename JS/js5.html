@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="js5.css">
+    <meta name="author" content="Luis Mtz Dlc">
+</head>
+<body>
+    <h1>Calculadora Basica</h1>
+    <script src="js5.js"></script>
+    <div class="cont_info">
+        <div class="operaciones">
+            <div class="divsform">
+                <label for="numero">Numero</label>
+                <input type="text" name="numero" id="numero">
+            </div>
+            <div class="divsform">
+                <label for="numero2">Numero</label>
+                <input type="text" name="numero2" id="numero2">
+            </div>
+            <div class="divsform">
+                <label for="operacion">Ingrese el Signo</label>
+                <select name="operacion" id="operacion" form="operacion">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                  </select>
+            </div>
+            <div class="divsform">
+                <label for="result">Resultado</label>
+                <input type="text" name="result" id="result" readonly>
+            </div>
+            <div class="divsform">
+                <button onclick="calcularop()">Calcular</button> 
+            </div>
+        </div>
+        <div class="img-cont">
+            <img src="resourses/opbasicas.png" alt="">
+        </div>
+</body>
+</html>
